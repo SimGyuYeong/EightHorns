@@ -16,16 +16,13 @@ public enum ST
 public class ST_Base : MonoBehaviour
 {
     public Dictionary<ST, int> St = new();
-    
-    public int skillPoint = 0;
+
     public Button[] upgradeBtns;
 
     //올릴 때마다 증가되는 효과 구현, 4레벨마다 큰 변화
     //가면, 스킬트리 2가지 요소를 모두 고려해야 하므로, 스킬트리는 enum 방식, 가면은 상속 구조를 활용하는걸로 하자
-    public virtual void Effect()
-    {
-        
-    }
+    public virtual void Effect(){}
+
     public void UpgradeWeapon()
     {
         //파 = 100 ~ 800, 쾌 = 10 ~ 80, 거 = 1 ~ 8
