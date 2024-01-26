@@ -12,6 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc60b9cb0bd22aa49803d455e605146f, type: 3}
   m_Name: Upgrade
   m_EditorClassIdentifier: 
-  UpgradeType: 0
-  UpgradeName: "\uAC15\uD55C \uC721\uCCB4"
-  UpgradeValue: 5
+  MaskName: 
+  SkillType: 0
+  upgradeDataList:
+  - UpgradeType: 0
+    UpgradeName: 
+    UpgradeValue: 0
+  - UpgradeType: 0
+    UpgradeName: 
+    UpgradeValue: 0
+  - UpgradeType: 0
+    UpgradeName: 
+    UpgradeValue: 0
+  - UpgradeType: 0
+    UpgradeName: 
+    UpgradeValue: 0
+  - UpgradeType: 0
+    UpgradeName: 
+    UpgradeValue: 0

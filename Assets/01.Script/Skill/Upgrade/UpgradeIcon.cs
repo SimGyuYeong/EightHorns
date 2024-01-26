@@ -5,8 +5,10 @@ using UnityEngine;
 
 public class UpgradeIcon : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI nameText;
-    [SerializeField] private TextMeshProUGUI descText;
+    [SerializeField] 
+    private TextMeshProUGUI nameText;
+    [SerializeField] 
+    private TextMeshProUGUI descText;
 
     public void SetSkill(UpTypes upgradeType, float value)
     {
