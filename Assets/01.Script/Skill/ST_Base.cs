@@ -8,20 +8,22 @@ using UnityEngine.UI;
 //스킬 포인트는 총 12개, 분기 당 최대 개수는 8, 4마다 큰 변화
 public enum ST
 {
-    Power = 0,
-    Speed,
-    Size,
+    CRASH = 0,
+    RAPID,
+    GIANT,
 }
 
 public class ST_Base : MonoBehaviour
 {
     public Dictionary<ST, int> St = new();
-
     public Button[] upgradeBtns;
 
     //올릴 때마다 증가되는 효과 구현, 4레벨마다 큰 변화
     //가면, 스킬트리 2가지 요소를 모두 고려해야 하므로, 스킬트리는 enum 방식, 가면은 상속 구조를 활용하는걸로 하자
-    public virtual void Effect(){}
+    public virtual void Effect(ST skill)
+    {
+
+    }
 
     public void UpgradeWeapon()
     {
