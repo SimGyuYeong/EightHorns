@@ -3,8 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "SO/Upgrade", menuName = "SO/Upgrade")]
-public class UpgradeSO : ScriptableObject
+[CreateAssetMenu(fileName = "SO/Upgrade/Unit", menuName = "SO/Upgrade/Unit")]
+public class UpgradeUnitSO : ScriptableObject
 {
     //나중에 가면 종류로 변경 예정
     [Header("가면 종류")]

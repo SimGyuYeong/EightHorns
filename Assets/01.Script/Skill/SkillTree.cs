@@ -20,6 +20,8 @@ public class SkillTree : MonoBehaviour
 
     [SerializeField]
     private Button[] upgradeBtn;
+    [SerializeField]
+    private UpgradeGroupSO groupSO;
     private List<TextMeshProUGUI> upgradeTxt = new();
 
     private void Start()
@@ -44,7 +46,13 @@ public class SkillTree : MonoBehaviour
     //가면, 스킬트리 2가지 요소를 모두 고려해야 하므로, 스킬트리는 enum 방식, 가면은 상속 구조를 활용하는걸로 하자
     public void Effect(ST skill)
     {
-
+        foreach(var so in groupSO.UpgradeUnits)
+        {
+            for(int a = 0; a < so.upgradeDataList.Count; a++)
+            {
+                //UpgradesFunc.UpgradeUtil(so.upgradeDataList[a].UpgradeType, so.upgradeDataList[a].UpgradeValue,
+            }
+        }
     }
 
     public void UpgradeWeapon()
